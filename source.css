@@ -2,7 +2,8 @@ body {
 	background-image: url(tourism.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	background-attachment: fixed;;
+	background-attachment: fixed;
+	overflow-y: hidden;
 }
 
 #brand {
@@ -40,7 +41,7 @@ body {
 	position: absolute;
 	width: 50%;
 	height: 20%;
-	margin-left: 48%;
+	margin-left: 45%;
 	margin-top: 2%;
 	background-color: rgba(0,0,0,0);
 	font-family: sans-serif;
@@ -61,7 +62,6 @@ body {
 	font-size: 24px;
 	font-family: sans-serif;
 	font-style: oblique;
-	
 	border-color: rgba(0,0,0, 0.3);
 	border-width: 5px;
 	border-radius: 10px;
@@ -69,7 +69,6 @@ body {
 }
 
 #img {
-	height: 50%;
 	width: 50%;
 	position: relative;
 }
