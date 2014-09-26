@@ -1,7 +1,8 @@
 body {
 	background-image: url(tourism.jpg);
-	background-size: 100% auto;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	background-attachment: fixed;;
 }
 
 #brand {
@@ -11,8 +12,8 @@ body {
 }
 
 #btn {
-	position: relative;
-	margin-top: -12%;
+	position: absolute;
+	margin-top: 30%;
 	margin-left: 65%;
 	width: 30%;
 	height: 120px;
@@ -52,8 +53,8 @@ body {
 #product {
 	width: 90%;
 	height: 20%;
-	position: relative;
-	margin: 15% auto;
+	position: absolute;
+	margin: 20% auto;
 	display: block;
 	top: 0; left: 0; bottom: 0; right: 0;
 	color: white;
