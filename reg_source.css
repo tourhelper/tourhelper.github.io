@@ -47,8 +47,8 @@ body {
 }
 
 @font-face{
-	font-family: Connie;
-	src: url(font.ttf);}
+	font-family: Whipsmart;
+	src: url(ws.ttf);}
 
 #message {
 	position: relative;
@@ -59,7 +59,7 @@ body {
 	display: none;
 	text-align: justify;
 	color: #fff;
-	font-family: Connie;
+	font-family: Whipsmart;
 	font-size: 32px;
 	text-indent: 1.5em;
 }
