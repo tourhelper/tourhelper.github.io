@@ -1,1 +1,54 @@
-Hello World
+<!doctype html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="source.css">
+	<script>
+		var img = ["ski.jpg", "tourism.jpg"];
+		function changeBack() {
+			var body = document.getElementById("body");
+			if i=0
+			 {  body.style.backgroundImage = img[i+1];
+			 	i++;}
+			else {
+				body.style.backgroundImage = img[i-1];
+			 	i--;
+			}
+		}
+		setTimeout(changeBack, 100000);
+	</script>
+</head>
+
+<body id="body">
+	<div id="brand">
+		<img src="Helper_new.png">
+	</div>
+
+	<div id="problem">
+		<p>Не знаете где и с кем провести время в поездке? Спланируйте Ваше путешествие легко и быстро!
+	</div>
+
+	<div id="product">
+		<div style="display: inline-table; position: relative; width: 23%; height: 10%; text-align: center;">
+			<img src="maps-icon.png" id="img">
+			<p id="p_back"><b>Задайте требования к поездке</b>
+		</div>
+		<div style="display: inline-table; position: relative; width: 23%; height: 10%; text-align: center;">
+			<img src="Preview-2-icon.png" id="img">
+			<p id="p_back"><b>TourHelper найдет подходящие варианты</b>
+		</div>
+		<div style="display: inline-table; position: relative; width: 23%; height: 10%; text-align: center;">
+			<img src="Sharepoint-icon.png" id="img">
+			<p id="p_back"><b>Подберите себе компанию</b>
+		</div>
+		<div style="display: inline-table; position: relative; width: 23%; height: 10%; text-align: center;">
+			<img src="heart-icon.png" id="img">
+			<p id="p_back"><b>Наслаждайтесь поездкой</b>
+		</div>
+		
+	</div>
+
+	<div id="btn">
+		<button id="start"/>Попробовать
+	</div>
+
+</body>
