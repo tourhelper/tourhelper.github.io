@@ -1,8 +1,18 @@
 <!doctype html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="reg_source.css">
-	
+	<script>
+		$(function(){
+			document.getElementById('btn').addEventListener('click', function(e) {
+			e.preventDefault();
+			$('#input_email')[0].style.display = "none";
+			$('#btn')[0].style.display = "none";
+			$('#message')[0].style.display = "block";
+		}, true);
+		})
+	</script>
 </head>
 
 <body id="body">
@@ -10,11 +20,13 @@
 		<img src="Helper_new.png">
 	</div>
 
-	<form id="form">
-		<input type="email" placeholder="Введите свой e-mail" autofocus id="input_email">
+	<form id="form" method="post">
+		<input type="email" placeholder="Введите свой e-mail" autofocus="true" id="input_email" required>
 		<button id="btn">Зарегистрироваться</button>
 	</form>
 
-	
-
+	<div id="message">
+		<p>Спасибо за регистрацию! К сожалению, сервис еще не запущен. 
+		Но у Вас есть уникальная возможность поучаствовать в тестировании. Ваше мнение для нас очень важно
+	</div>
 </body>

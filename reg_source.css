@@ -45,3 +45,21 @@ body {
 	margin: 10px;
 	margin-top: 40px;
 }
+
+@font-face{
+	font-family: Connie;
+	src: url(font.ttf);}
+
+#message {
+	position: relative;
+	width: 38%;
+	height: 30%;
+	margin-top: -4%;
+	margin-left: 55%;
+	display: none;
+	text-align: justify;
+	color: #fff;
+	font-family: Connie;
+	font-size: 32px;
+	text-indent: 1.5em;
+}
