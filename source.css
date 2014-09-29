@@ -4,6 +4,8 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	overflow-y: hidden;
+	min-width: 1000px;
+	min-height: 562px;
 }
 
 #brand {
