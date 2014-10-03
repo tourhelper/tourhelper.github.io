@@ -1,11 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script src="jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="reg_source.css">
 	<script>
 		$(function(){
-			document.getElementById('btn').addEventListener('click', function(e) {
+			document.getElementById('btn').addEventListener('submit', function(e) {
 			e.preventDefault();
 			$('#input_email')[0].style.display = "none";
 			$('#btn')[0].style.display = "none";
@@ -31,8 +31,8 @@
 	</div>
 
 	<form id="form" method="post">
-		<input type="email" placeholder="Введите свой e-mail" autofocus="true" id="input_email" required>
-		<button id="btn">Зарегистрироваться</button>
+		<input type="email" placeholder="Введите свой e-mail" id="input_email" name="email" required>
+		<button id="btn" type="submit">Зарегистрироваться</button>
 	</form>
 
 	<div id="message">
