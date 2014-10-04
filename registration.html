@@ -5,11 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="reg_source.css">
 	<script>
 		$(function(){
+
 			document.getElementById('form').addEventListener('submit', function(e) {
 			e.preventDefault();
 			$('#input_email')[0].style.display = "none";
 			$('#btn')[0].style.display = "none";
 			$('#message')[0].style.display = "block";
+			document.location.hash = "#registration";
 		}, true);
 		})
 	</script>
