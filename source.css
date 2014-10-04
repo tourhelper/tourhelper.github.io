@@ -13,8 +13,7 @@ body {
 }
 
 #btn {
-	position: relative;
-	margin-top: -1%;
+	margin-top: 10px;
 	margin-left: 65%;
 	width: 30%;
 	height: 120px;
