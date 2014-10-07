@@ -4,14 +4,19 @@
 	<script src="jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="reg_source.css">
 	<script>
-		$(function(){
-
-			document.getElementById('form').addEventListener('submit', function(e) {
-			e.preventDefault();
+		function hideButton() {
 			$('#input_email')[0].style.display = "none";
 			$('#btn')[0].style.display = "none";
 			$('#message')[0].style.display = "block";
-			document.location.hash = "#registration";
+		}
+		$(function(){
+			if (document.location.search == '?register=ok') {
+				hideButton();
+			}
+			document.getElementById('form').addEventListener('submit', function(e) {
+			e.preventDefault();
+			hideButton();
+			document.location.search = '?register=ok';
 		}, true);
 		})
 	</script>
