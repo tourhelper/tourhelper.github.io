@@ -1,15 +1,17 @@
-<!doctype html>
+﻿<!doctype html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script src="jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="reg_source.css">
 	<script>
 		$(function(){
-			document.getElementById('btn').addEventListener('click', function(e) {
+
+			document.getElementById('form').addEventListener('submit', function(e) {
 			e.preventDefault();
 			$('#input_email')[0].style.display = "none";
 			$('#btn')[0].style.display = "none";
 			$('#message')[0].style.display = "block";
+			document.location.hash = "#registration";
 		}, true);
 		})
 	</script>
@@ -31,12 +33,11 @@
 	</div>
 
 	<form id="form" method="post">
-		<input type="email" placeholder="Введите свой e-mail" autofocus="true" id="input_email" required>
-		<button id="btn">Зарегистрироваться</button>
-	</form>
+		<input type="email" placeholder="Введите свой e-mail" id="input_email" name="email" required>
+		<input id="btn" type="submit" value="Зарегистрироваться">
 
 	<div id="message">
-		<p>Благодарим за регистрацию! К сожалению, сервис еще не запущен. 
+		<p>Благодарим за регистрацию! Наш сервис еще не запущен. 
 		Но у Вас есть уникальная возможность поучаствовать в тестировании. Ваше мнение для нас очень важно
 	</div>
 

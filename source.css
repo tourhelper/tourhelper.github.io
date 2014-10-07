@@ -13,8 +13,6 @@ body {
 }
 
 #btn {
-	position: relative;
-	margin-top: -5%;
 	margin-left: 65%;
 	width: 30%;
 	height: 120px;
@@ -55,7 +53,7 @@ body {
 	width: 90%;
 	height: 20%;
 	position: relative;
-	margin: 5% auto;
+	margin: 0% auto;
 	display: block;
 	top: 0; left: 0; bottom: 0; right: 0;
 	color:  #1d69bd;
@@ -75,4 +73,9 @@ body {
 
 #p_back {
 	background-color: rgba(255, 255, 255, 0.5);	
+	min-height: 65px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
 }
+

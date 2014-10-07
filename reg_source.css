@@ -52,10 +52,9 @@ body {
 
 #message {
 	position: relative;
-	width: 38%;
 	height: 30%;
-	margin-top: -4%;
-	margin-left: 55%;
+	margin-top: -10%;
+	margin-left: -25%;
 	display: none;
 	text-align: justify;
 	color: #fff;
