@@ -1,8 +1,9 @@
 body {
 	background-image: url(tourism.jpg);
-	background-size: 100% auto;
+	background-position: center center;
 	background-repeat: no-repeat;
-	overflow-y: hidden;	
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 #brand {
