@@ -1,7 +1,7 @@
 body {
 	background-image: url(congruent_pentagon.png);
 	background-position: center center;
-
+	overflow-x: hidden; 
 }
 
 #brand {
