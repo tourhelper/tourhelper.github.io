@@ -1,6 +1,7 @@
 body {
 	background-image: url(congruent_pentagon.png);
 	background-position: center center;
+	overflow-x: hidden; 
 
 }
 
@@ -24,7 +25,7 @@ body {
 	padding: 0px 50px;
 	display: inline;
 	width: 50%;
-	margin-top: 5%;
+	margin-top: 2%;
 
 }
 
