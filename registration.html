@@ -15,6 +15,12 @@
 			}
 			document.getElementById('form').addEventListener('submit', function(e) {
 			e.preventDefault();
+
+			data = {
+			'email': $( "#input_email" ).val()
+			};
+
+			$.post('http://tourhelper.890m.com/handler', data)
 			hideButton();
 			document.location.search = '?register=ok';
 		}, true);
@@ -44,10 +50,10 @@
 			<center><img src="telefon.png"></center>
 		</div>
 
-		<form id="form" method="post" action="http://yandex.ru/">
+		<form id="form" method="post">
 			<input type="email" placeholder="Введите свой e-mail" id="input_email" name="email" required>
 			<input id="btn" type="submit" value="Зарегистрироваться">
-
+		</form>
 		<div id="message">
 			<p>Благодарим за регистрацию! Наш сервис еще не запущен. 
 			Но у Вас есть уникальная возможность поучаствовать в тестировании. Ваше мнение для нас очень важно
